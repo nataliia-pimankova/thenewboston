@@ -4,6 +4,8 @@ from . import views
 app_name = 'music'
 
 urlpatterns = [
+    url(r'^register/$', views.UserFormView.as_view(), name='index'),
+
     # /music/
     url(r'^$', views.IndexView.as_view(), name='index'),
 
